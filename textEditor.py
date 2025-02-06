@@ -27,7 +27,7 @@ def saveAs():
 def openFile():
     f = filedialog.askopenfile(mode='r')
     t = f.read()
-    text.delete(0.0, END)
+    text.delete(0.0, tk.END)
     text.insert(0.0, t)
 
 root = tk.Tk()
